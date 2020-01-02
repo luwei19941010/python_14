@@ -3,6 +3,7 @@
 
 import sys
 import time
+'''
 a=[11,22,33]
 b=a
 #值应用次数
@@ -22,3 +23,19 @@ for i in range(101):
     time.sleep(0.5)
     msg='%s%%\r'%i
     print(msg,end='')
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
