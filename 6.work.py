@@ -128,8 +128,121 @@ while b<4000000:
     print(b)
 
 print(l.index(a))
+
+
+dicta={'a':1,'b':2,'c':3,'d':4,'f':'hello'}
+dictb={'b':3,'d':5,'e':7,'m':9,'k':'world'}
+dictc={}
+for itema in dicta.items():
+    a1,a2=itema
+    for itemb in dictb.items():
+        b1,b2=itemb
+        if a1==b1:
+            print(a1)
+            dictc[a1]=a2+b2
+        else:
+            dictc[a1]=a2
+            dictc[b1]=b2
+print(sorted(dictc.items(),key=lambda a:a[0],reverse=False))
 '''
 
-dicta={'a':1,'b':2,'c':3,'d':4,'e':'hello'}
-dictb={'b':3,'d':5}
+
+#10.看代码写结果
+'''
+def extendlist(val,list=[]):
+    list.append(val)
+    return list
+list1=extendlist(10)
+list2=extendlist(123,[])
+list3=extendlist('a')
+print(list1,list2,list3)
+
+list1:[10,'a']
+list2:[123]
+list:[10,'a']
+'''
+#11.面试题https://gitee.com/old_boy_python_stack_21/teaching_plan/issues/IVGCH
+#1.A，B,C
+#2.
+'''
+res={}
+a=('a','b','c','d','e')
+b=(1,2,3,4,5)
+for i in range(len(a)):
+    res[a[i]]=b[i]
+print(res)
+'''
+#3.python 代码获取命令行参数
+# import sys
+# print(sys.argv)
+#4.ip='192.168.0.100'
+# ip='192.168.0.100'
+# data=ip.split('.')
+# print(data)
+# new_data=[]
+# for i in data:
+#     new_data.append(bin(int(i)).lstrip('0b').zfill(8))
+# print('.'.join(new_data))
+
+#5.
+# sum=''
+# Alist=['a','b','c']
+# for i in range(len(Alist)):
+#     sum=sum+Alist[i]
+#
+# print(','.join(sum))
+
+#6.
+# STRA='123143141jahsgdavhgsdvavsj'
+# # #最后两个
+# # print(STRA[-1:-2:-1])
+# #第二个 第三个
+# print(STRA[1],STRA[2])
+
+#7.
+#print(Alist[0:4]
+
+#8.编写一个函数，让函数接受一个文件夹名称作为参数，显示文件夹中文件的路径，以及其中包含文件夹中文件的路径
+# import sys,os
+# data=sys.argv
+#
+# v=os.path.dirname(os.path.abspath(data[0]))
+# for a,b,c in os.walk(v):
+#     for i in c:
+#         print(os.path.join(a,i))
+#
+
+#8.
+sum = 0
+d=[]
+for n in range(1,1001):
+    for i in range(1,n):
+        if n%i==0:
+            sum+=i
+    if sum==n:
+        d.append(n)
+        sum = 0
+    sum=0
+print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

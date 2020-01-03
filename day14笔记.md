@@ -266,8 +266,6 @@ sys.stdout.write('bac')
 # \r回到当前行的起始位置
 ```
 
-
-
 ```
 import os,time
 #1.读取文件大小（字节）
